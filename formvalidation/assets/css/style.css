@@ -1,0 +1,24 @@
+.head h2{
+    color:white;
+    background-color: aquamarine;
+    background-size: 100px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 30px;
+    display: flex;
+    text-align: center;
+}
+button{
+    color: white;
+    background-color: aquamarine;
+    margin-top: 30px;
+    padding: 20px 30px;
+}
+input{
+    width: 500px;
+    padding: 13px;
+}
+.form{
+    font-size: 25px;
+}

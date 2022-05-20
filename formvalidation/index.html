@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script href="./assets/js/script.js"></script> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="head">
+        <h2>Contact us</h2>
+    </div>
+    <div class="form">
+    <form  name="myForm" onsubmit="return validateForm()" action="results.html" method="GET">
+        <div class="fullname">
+        <label for="name">Full Name<span style="color:red;">*</span></label><br>
+        <input type="text" name="fname" id="name">
+        <input type="text" name="lname" id="Lastname">
+        </div>
+        <div class="mail">
+            <label for="email">Email<span style="color:red;">*</span></label><br>
+            <input type="email" name="Email" id="email">
+        </div>
+        <div class="age">
+            <label for="age">Age<span style="color:red;">*</span></label><br>
+            <input type="number" name="Age" id="age">
+        </div> 
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    <script>
+    function validateForm() 
+    {
+          let x = document.forms["myForm"]["fname"].value;
+          if (x == "") 
+          {
+            alert("Name must be filled out");
+            return false;
+          }
+    }
+    function validateForm() 
+    {
+        let x = document.forms["myForm"]["lname"].value;
+        if (x == "") 
+        {
+        alert("Surname must be filled out");
+        return false;
+        }
+    }
+    function validateForm() 
+    {
+        let x = document.forms["myForm"]["lname"].value;
+        if (x == "") 
+        {
+        alert("Surname must be filled out");
+        return false;
+        }
+    }
+    function validateForm() 
+    {
+        let x = document.forms["myForm"]["Email"].value;
+        if (x == "") 
+        {
+        alert("Mail must be filled out");
+        return false;
+        }
+    }
+    function validateForm() 
+    {
+        let x = document.forms["myForm"]["Age"].value;
+        if (x == "") 
+        {
+        alert("Age must be filled out");
+        return false;
+        }
+    }
+    </script>
+    
+</body>
+
+</html>
+        
